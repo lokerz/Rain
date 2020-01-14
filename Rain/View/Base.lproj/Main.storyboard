@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdT-mQ-cX4">
+                                <rect key="frame" x="782" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dU5-yb-d37"/>
+                                    <constraint firstAttribute="width" constant="50" id="xHO-dz-e04"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="helpButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQy-ie-S80"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zos-Jh-xUf">
+                                <rect key="frame" x="724" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YwA-XY-mHQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="vsH-B2-2i7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <connections>
+                                    <action selector="breathButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUB-Cg-LeM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri8-YU-YWu">
+                                <rect key="frame" x="686" y="8" width="30" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oxJ-Gi-7v4"/>
+                                    <constraint firstAttribute="width" constant="30" id="pgO-Au-tWF"/>
+                                </constraints>
+                                <state key="normal" image="Triangle"/>
+                                <connections>
+                                    <action selector="triangleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3z-QP-tsp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zos-Jh-xUf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="80j-JM-Wke"/>
+                            <constraint firstItem="MdT-mQ-cX4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8au-Tn-blb"/>
+                            <constraint firstItem="MdT-mQ-cX4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="9Bc-r1-Ac5"/>
+                            <constraint firstItem="MdT-mQ-cX4" firstAttribute="leading" secondItem="Zos-Jh-xUf" secondAttribute="trailing" constant="8" id="OwM-Ua-hFh"/>
+                            <constraint firstItem="Zos-Jh-xUf" firstAttribute="leading" secondItem="ri8-YU-YWu" secondAttribute="trailing" constant="8" id="dz6-Df-Uaa"/>
+                            <constraint firstItem="ri8-YU-YWu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="8" id="nVO-PQ-cZM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="breathButton" destination="Zos-Jh-xUf" id="BOp-5b-haT"/>
+                        <outlet property="helpButton" destination="MdT-mQ-cX4" id="fIi-Xu-h2c"/>
+                        <outlet property="triangleButton" destination="ri8-YU-YWu" id="ViA-S9-LqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Triangle" width="30" height="50"/>
+    </resources>
+</document>
